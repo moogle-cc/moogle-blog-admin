@@ -1,0 +1,80 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+$primary_text_color: #003862;
+.adminHeader{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    &::before{
+        content:'';
+        width: 100%;
+        height: 100%;
+        background: #DFF1F1;
+        position: absolute;
+        z-index: -1;
+        clip-path: ellipse(100% 90% at 140% 15%);
+    }
+    .moogleLogo{
+        width: 150px;
+        position: absolute;
+        top: 2%;
+        left: 1.5%;
+    }
+    .headerContainer{
+        width: 100%;
+        height: 100%;
+        @include center;
+        justify-content: space-around;
+        .left{
+            h1{
+                font-size: 60px;
+                color: $primary_text_color;
+            }
+        }
+        .right{
+            img{
+                width: 450px;
+                transform: rotate(-7deg);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .adminHeader{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        &::before{
+            content:'';
+            display: none;
+        }
+        .moogleLogo{
+            width: 150px;
+            position: absolute;
+            top: 2%;
+            left: 1.5%;
+        }
+        .headerContainer{
+            width: 100%;
+            height: 100%;
+            // justify-content: space-around;
+            flex-direction: column;
+            .left{
+                h1{
+                    font-size: 30px;
+                    color: $primary_text_color;
+                }
+            }
+            .right{
+                img{
+                    width: 100px;
+                    transform: rotate(-7deg);
+                }
+            }
+        }
+    }
+}
