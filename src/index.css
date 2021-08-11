@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root {
+  --moogle-heading-color: #043C65;
+  --moogle-heading-border-color: #FF8B88;
+  --moogle-blog-title-text-color: #3f3f3f;
+  --moogle-text-color: #3f3f3f;
+  --moogle-link-text-color: #f37782;
+  --moogle-dlc-text-color: #f37782;
+  --moogle-box-shadow-color: #3f3f3f;
+  --moogle-background-color: #dff1f1;
+  --moogle-avatar-background-color: #f37782;
+  --moogle-font: 'Lato';
+  --moogle-font-fallback: 'sans-serif';
+  --moogle-title-font: 'American Typewriter';
+  --moogle-title-font-fallback: 'sans-serif';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #FF8B88;
+    text-decoration: none;
+}
+body{
+    background: #fff;
+    /* background-image: url("moogle-blog.png") , url("moogle-blog.png"); */
+    background-repeat: no-repeat , no-repeat;
+    background-size: 32% 44% , 32% 44%;
+    background-position: -3% 32% , 102.5% 85%;
+}
+@media (max-width: 768px) {
+    body{
+        background-image: none
+    }
+}
+.flex{ display: flex; }
+.justify-center{ justify-content: center; }
+.justify-between{ justify-content: space-between; }
+.flex-column{ flex-direction: column; }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

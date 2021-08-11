@@ -1,0 +1,61 @@
+#editBlogDetailsModal {
+    -webkit-box-shadow: 0 0 100px rgba(0, 56, 98, 0.5);
+            box-shadow: 0 0 100px rgba(0, 56, 98, 0.5);
+    background: #DFF1F1;
+  }
+  
+  #editBlogDetailsModal .card-body {
+    width: 100% !important;
+  }
+  
+  #editBlogDetailsModal .card-body .form {
+    width: 100% !important;
+    padding: 15px 30px;
+    position: relative;
+  }
+  
+  #editBlogDetailsModal .card-body .form .form-group {
+    width: 100% !important;
+  }
+  
+  #editBlogDetailsModal .card-body .form .form-group .input {
+    width: 90%;
+    margin: 0 0 25px 0;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000 !important;
+    border-radius: 5px;
+  }
+  
+  #editBlogDetailsModal #editModalUpdateBtn, #editBlogDetailsModal #editModalCancelBtn {
+    background: #F88379;
+    color: #fff;
+    font-weight: bold;
+    margin: "0 0 0 20px";
+    padding: 5px 20px;
+    outline: none;
+    border: 1px solid ;
+    border-radius: 5px;
+  }
+  #editBlogDetailsModal #editModalUpdateBtn:hover{
+    background: #DFF1F1;
+    color: #F88379;
+    border: 1px solid #F88379;
+  }
+  #editBlogDetailsModal #editModalUpdateBtn:active{
+    background: rgba(248, 131, 121, 0.5);
+    color: #F88379;
+    border: 1px solid #F88379;
+  }
+  #editBlogDetailsModal #editModalCancelBtn{
+    color: #F88379;
+    background: transparent;
+    border: 1px solid #F88379;
+    /* position: absolute;
+    bottom: 2%;
+    left: 5%; */
+    transition: 0.2s all;
+  }
+  #editBlogDetailsModal #editModalCancelBtn:hover{
+    color: #FFFFFF;
+    background: #F88379;
+  }
